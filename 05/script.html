@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <script>
+        function minhafuncao(arg1,arg2){
+
+            var soma =  arg1 + arg2
+            var msg = 'a soma é igual a: '
+            alert ( msg+soma);
+        }
+        function escreve(arg){
+            document.write(arg)
+        }
+        function carregarimg1(){
+            alert('vixe bb, ta ruim viu')
+            document.getElementById('img').setAttribute("src" , "https://dynamicmedia.livenationinternational.com/Media/u/h/z/4ce9bdb0-c684-4142-9290-daf2470b4835.jpg" )
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg2()")
+        }
+        function carregarimg2(){
+            alert('rpz, n é muita coisa ne')
+            document.getElementById('img').setAttribute("src" , "" )
+            document.getElementById("mudar-imagem").setAttribute("onclick", "carregarimg1()")
+        }
+    </script>
+</head>
+
+<body>
+   
+    <H1> é uma tentativa de javascript papai </H1>
+    <button onclick="minhafuncao(150,390)"> clique aí fi</button>
+    <button onclick="escreve('<h1>MOONLIGHT OF THE RIVERRRR</h1>')"> escreve</button>
+    <button id="mudar-imagem" onclick="carregarimg1()">trocar aimagem</button>
+    <div id="phonsy" >
+        <img id="img" src="https://musictech.com/wp-content/uploads/2023/08/MT-Mac-Demarco-2023-9-image-Kieram-McNally@1050x1400.jpg" alt="">
+    </div>
+
+</body>
+</html>
