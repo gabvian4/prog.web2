@@ -27,8 +27,18 @@
             }
         }
         function posicaolinguagens() {
-            var indice = prompt('Qual posição da lista deseja consultar?');
+            var indice = prompt('qual posição da lista q tu quer consultar?');
             alert(linguagens[indice]);
+        }
+        function apagarTexto() {
+            document.getElementById('mostrarlinguagens').innerHTML="";
+            document.getElementById('escreve-div').innerHTML=""; 
+            var form = document.querySelector('form');
+            if (form){
+                form.reset();
+            }   
+
+
         }
     </script>
 
@@ -40,6 +50,7 @@
     <h1>ARRAY DE LINGUAGENS</h1>
     <button onclick="mostrarlinguagens()">criar array</button> <br><br>
     <button onclick="posicaolinguagens()">posição no array</button>
+    <button onclick=""></button>
 
     <div id="minhaDiv"></div>
 
